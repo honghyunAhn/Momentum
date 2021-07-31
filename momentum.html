@@ -2,26 +2,17 @@
 <html>
 
 <head>
-    <title>Something</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="momentum.css" />
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
+    <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is yout name?" />
+        <button>Log In</button>
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList">
-    </ul>
-    <script src="clock.js"></script>
+
     <script src="gretting.js"></script>
-    <script src="todo.js"></script>
 </body>
 
 </html>
