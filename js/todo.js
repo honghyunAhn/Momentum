@@ -1,4 +1,3 @@
-  
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
@@ -49,7 +48,6 @@ function clearToDo(event){
         clear_button.innerText = "O";
         
         cleartoDos = cleartoDos.filter(id => id != parseInt(span.id));
-        console.log(cleartoDos);
         localStorage.setItem(TODOS_CLEAR_KEY, JSON.stringify(cleartoDos));
         if (localStorage.getItem(TODOS_CLEAR_KEY) === "[]") {
             localStorage.removeItem(TODOS_CLEAR_KEY);
@@ -70,8 +68,6 @@ function paintToDo(newTodo){
     clear_button.innerText = "O";
     remove_button.addEventListener("click", deleteToDo);
     clear_button.addEventListener("click", clearToDo);
-
-    console.log(cleartoDos[1]);
 
     for (step = 0; step < cleartoDos.length; step++) {
         if (parseInt(li.id) === cleartoDos[step]){
@@ -115,14 +111,12 @@ function updateToDoList() {
         if (savedclearToDos !== null){
             const parseclearToDos = JSON.parse(savedclearToDos);
             cleartoDos = parseclearToDos;
-            console.log("clear todo exist:", cleartoDos);
         }
         parseToDos.forEach(paintToDo);
 
     } else {
         toDoList.classList.remove("todo-list_style");
         toDoList.classList.add("hidden");
-        console.log(toDoList.classList);
     }
 }
 
