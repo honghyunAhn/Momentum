@@ -81,7 +81,7 @@ function paintToDo(newTodo){
     buttons.appendChild(remove_button);
     li.appendChild(buttons);
     toDoList.appendChild(li);
-    toDoList.classList.remove(HIDDEN_CLASSNAME);
+    toDoList.classList.remove("hidden");
 
 }
 
