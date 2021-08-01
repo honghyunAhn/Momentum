@@ -12,11 +12,5 @@ const images = [
     "10.jpg"
 ];
 
-const choseImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${choseImage}`;
-bgImage.id = "bgImage";
-
-document.body.appendChild(bgImage);
+const chosenImage = images[Math.floor(Math.random() * images.length)];
+document.body.style.backgroundImage = `url(img/${chosenImage})`;
