@@ -41,7 +41,6 @@ button {
   cursor: pointer;
 }
 #clock {
-  margin-top: 100px;
   margin-bottom: 50px;
   font-size: 100px;
   font-weight: 600;
@@ -188,4 +187,85 @@ li span {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #quote {
+    width: 70%;
+    margin-left: 45px;
+  }
+
+  #greeting,
+  #login-form {
+    padding: 0px;
+    font-size: 30px;
+  }
+
+  #clock {
+    margin-top: -100px;
+    font-size: 80px;
+  }
+
+  .todo-list_style {
+    padding: 10px;
+    width: 30%;
+  }
+
+  #todo-list li {
+    margin-top: 5px;
+  }
+
+  #todo-list h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #weather {
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  #weather span {
+    font-size: 20px;
+  }
+
+  #login-form input {
+    width: 200px;
+  }
+
+  #clock {
+    margin-top: -50px;
+    font-size: 50px;
+  }
+
+  #greeting,
+  #login-form {
+    font-size: 30px;
+  }
+
+  #logout_bt {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px;
+  }
+
+  #todo-form input,
+  .fa-times-circle:before,
+  .todo-list_style {
+    display: none;
+  }
+
+  #quote span {
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  #quote {
+    width: 80%;
+    margin-left: -9%;
+  }
 }
