@@ -15,6 +15,7 @@ body {
 button {
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 #greeting,
@@ -26,6 +27,18 @@ button {
   margin-bottom: 25px;
 }
 
+#logout_bt {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: azure;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+#logout_bt:hover {
+  cursor: pointer;
+}
 #clock {
   margin-top: 300px;
   margin-bottom: 50px;
