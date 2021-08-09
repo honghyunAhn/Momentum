@@ -1,9 +1,19 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-
+const hour = new Date().getHours();
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+
+let hello = "Hello,";
+
+if (hour < 12){
+    hello = "Good Morning,";
+} else if (hour < 18) {
+    hello = "Good Afternoon,";
+} else {
+    hello = "Good Evening,";
+};
 
 function onLoginSubmit(event) {
     event.preventDefault();
@@ -17,7 +27,7 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
     const logout_bt = document.createElement("button");
-    greeting.innerText = `${username} 오늘도 화이팅!`;
+    greeting.innerText = `${hello} ${username}`;
     logout_bt.setAttribute("class", "fas fa-sign-out-alt");
     logout_bt.id = "logout_bt";
     greeting.appendChild(logout_bt);
@@ -27,6 +37,9 @@ function paintGreetings(username) {
 }
 
 function logout(){
+    if(!confirm("로그아웃하시면, 저장한 모든 정보가 삭제됩니다. \n 로그아웃 하시겠습니까?")){
+        return;
+    }
     localStorage.removeItem(USERNAME_KEY);
     localStorage.removeItem(TODOS_KEY);
     location.reload();
