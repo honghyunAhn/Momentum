@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/1ff7f0cb68.js" crossorigin="anonymous"></script>
+
     <title>Momentum App</title>
 </head>
 <body>
@@ -20,11 +21,18 @@
     <form id="todo-form">
         <div>
             <input type="text" placeholder="Write a To Do and Press Enter" required/>
-            <button type="reset"><i class="far fa-times-circle"></i></button>
+        </div>
+    </form>
+    <form id="bookmark-form">
+        <div>
+            <input type="text" placeholder="Write a website and Press Enter" required/>
         </div>
     </form>
     <ul id="todo-list" class="todo-list_style">
         <h2>Your To Do List:</h2>
+    </ul>
+    <ul id="bookmark-list" class="bookmark-list_style">
+        <h2>Your BookMark List:</h2>
     </ul>
     <div id="quote">
         <span></span>
@@ -45,5 +53,6 @@
         <script src="js/quotes.js"></script>
         <script src="js/backgroud.js"></script>
         <script src="js/weather.js"></script>
+        <script src="js/bookmark.js"></script>
     </body>
 </html>
