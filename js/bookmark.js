@@ -8,15 +8,15 @@ const BOOKMARK_CLEAR_KEY_URL = "bookmarks_clear";
 let bookMark_urls = [];
 let clearbookMark_urls = [];
 
-function saveBookMark(){
+function saveBookMark() {
     localStorage.setItem(BOOKMARK_KEY_URL, JSON.stringify(bookMark_urls));
 }
 
-function saveclearBookMark(){
+function saveclearBookMark() {
     localStorage.setItem(BOOKMARK_CLEAR_KEY_URL, JSON.stringify(clearbookMark_urls));
 }
 
-function deleteBookMark(event){
+function deleteBookMark(event) {
     const li = event.target.parentElement.parentElement;
     li.remove();
     bookMark_urls = bookMark_urls.filter(bookMark_url => bookMark_url.id != parseInt(li.id));
@@ -37,10 +37,10 @@ function updateBookMarkList() {
     const savedBookMarks = localStorage.getItem(BOOKMARK_KEY_URL);
     const savedclearBookMarks = localStorage.getItem(BOOKMARK_CLEAR_KEY_URL);
 
-    if(savedBookMarks !== null){
+    if (savedBookMarks !== null) {
         const parseBookMarks = JSON.parse(savedBookMarks);
         bookMark_urls = parseBookMarks;
-        if (savedclearBookMarks !== null){
+        if (savedclearBookMarks !== null) {
             const parseclearBookMarks = JSON.parse(savedclearBookMarks);
             clearbookMark_urls = parseclearBookMarks;
         }
@@ -53,13 +53,13 @@ function updateBookMarkList() {
 }
 updateBookMarkList();
 
-function paintBookMark(newBK){
+function paintBookMark(newBK) {
     const li = document.createElement("li");
     const a = document.createElement("a");
     li.id = newBK.id;
     a.id = newBK.id;
     a.href = newBK.text;
-    const innerUrl = newBK.text.substring(8,30);
+    const innerUrl = newBK.text.substring(8, 35);
     a.innerText = innerUrl;
     const bk_remove_button = document.createElement("button");
     const buttons = document.createElement("div");
@@ -67,7 +67,7 @@ function paintBookMark(newBK){
     bk_remove_button.addEventListener("click", deleteBookMark);
 
     for (step = 0; step < clearbookMark_urls.length; step++) {
-        if (parseInt(li.id) === clearbookMark_urls[step]){
+        if (parseInt(li.id) === clearbookMark_urls[step]) {
             a.classList.add("clear_bookmark");
             break;
         }
@@ -84,7 +84,7 @@ function handleSubmitBK(event) {
     event.preventDefault();
     let newBookMark = bookMarkInput.value;
     bookMarkInput.value = "";
-    if(newBookMark.substring(0,8) != "https://"){
+    if (newBookMark.substring(0, 8) != "https://") {
         newBookMark = "https://" + newBookMark;
     }
     const newBookMarkUrlObj = {

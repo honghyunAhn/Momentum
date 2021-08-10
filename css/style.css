@@ -176,7 +176,7 @@ li span {
   border-radius: 10px;
   color: azure;
   left: 50px;
-  top: 250px;
+  top: 25%;
 }
 
 #todo-list h2,
@@ -192,17 +192,25 @@ li span {
 
 #bookmark-list li a {
   padding-left: 15px;
+  margin-top: 6px;
 }
-
+#bookmark-list li {
+  vertical-align: middle;
+}
 #todo-list li button:first-child {
   color: greenyellow;
   font-size: 20px;
 }
 
-#todo-list li button:last-child,
-#bookmark-list li button:last-child {
+#todo-list li button:last-child {
   color: red;
   font-size: 20px;
+}
+
+#bookmark-list li button {
+  color: red;
+  font-size: 20px;
+  top: 100px;
 }
 
 .clear_todo,
