@@ -57,7 +57,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  left: 50px;
+  left: 20px;
   bottom: 50px;
   padding: 10px 20px 10px 20px;
 }
@@ -77,7 +77,7 @@ button {
   align-items: center;
   position: fixed;
   top: 50px;
-  left: 50px;
+  left: 20px;
   background-color: black;
   color: azure;
   height: 60px;
@@ -114,14 +114,16 @@ li span {
 }
 
 #todo-form div,
-#login-form div {
+#login-form div,
+#bookmark-form div {
   position: relative;
   display: flex;
   align-items: center;
 }
 
 #todo-form input,
-#login-form input {
+#login-form input,
+#bookmark-form input {
   background-color: azure;
   height: 35px;
   width: 300px;
@@ -132,14 +134,16 @@ li span {
 }
 
 #todo-form button,
-#login-form button {
+#login-form button,
+#bookmark-form button {
   font-size: 16px;
   color: rgb(51, 51, 51);
   position: absolute;
   right: 5px;
 }
 
-#todo-list li {
+#todo-list li,
+#bookmark-list li {
   width: 100%;
   margin-top: 15px;
   display: flex;
@@ -156,16 +160,32 @@ li span {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   color: azure;
-  right: 50px;
+  right: 20px;
   top: 50px;
 }
 
-#todo-list h2 {
+.bookmark-list_style {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  padding: 15px;
+  font-weight: 600;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: azure;
+  left: 20px;
+  top: 250px;
+}
+
+#todo-list h2,
+#bookmark-list h2 {
   text-decoration: underline;
   font-size: larger;
 }
 
-#todo-list li span {
+#todo-list li span,
+#bookmark-list li span {
   padding-left: 15px;
 }
 
@@ -174,12 +194,14 @@ li span {
   font-size: 20px;
 }
 
-#todo-list li button:last-child {
+#todo-list li button:last-child,
+#bookmark-list li button:last-child {
   color: red;
   font-size: 20px;
 }
 
-.clear_todo {
+.clear_todo,
+.clear_bookmark {
   color: rgba(240, 255, 255, 0.459);
   text-decoration-thickness: 2px;
   text-decoration-line: line-through;
