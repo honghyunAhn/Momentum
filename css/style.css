@@ -131,6 +131,7 @@ li span {
   border-color: rgba(0, 0, 0, 0.363);
   text-align: left;
   padding: 0px 30px 0px 20px;
+  margin-top: 5px;
 }
 
 #todo-form button,

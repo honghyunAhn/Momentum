@@ -19,6 +19,7 @@ function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     toDoForm.classList.remove(HIDDEN_CLASSNAME);
+    bookMarkForm.classList.remove(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     loginInput.value = "";
     localStorage.setItem(USERNAME_KEY, username);
@@ -42,6 +43,7 @@ function logout(){
     }
     localStorage.removeItem(USERNAME_KEY);
     localStorage.removeItem(TODOS_KEY);
+    localStorage.removeItem(BOOKMARK_KEY_URL);
     location.reload();
 }
 
@@ -50,6 +52,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     toDoForm.classList.add(HIDDEN_CLASSNAME);
+    bookMarkForm.classList.add(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUsername);
