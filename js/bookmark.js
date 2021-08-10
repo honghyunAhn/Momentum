@@ -59,7 +59,8 @@ function paintBookMark(newBK){
     li.id = newBK.id;
     a.id = newBK.id;
     a.href = newBK.text;
-    a.innerText = newBK.text;
+    const innerUrl = newBK.text.substring(8,30);
+    a.innerText = innerUrl;
     const bk_remove_button = document.createElement("button");
     const buttons = document.createElement("div");
     bk_remove_button.innerText = "X";

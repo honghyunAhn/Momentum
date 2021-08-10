@@ -186,8 +186,11 @@ li span {
   margin-bottom: 15px;
 }
 
-#todo-list li span,
-#bookmark-list li span {
+#todo-list li span {
+  padding-left: 15px;
+}
+
+#bookmark-list li a {
   padding-left: 15px;
 }
 
