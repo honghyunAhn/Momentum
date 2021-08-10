@@ -58,7 +58,7 @@ function paintBookMark(newBK){
     const a = document.createElement("a");
     li.id = newBK.id;
     a.id = newBK.id;
-    a.href = "https://" + newBK.text;
+    a.href = newBK.text;
     a.innerText = newBK.text;
     const bk_remove_button = document.createElement("button");
     const buttons = document.createElement("div");
@@ -81,8 +81,11 @@ function paintBookMark(newBK){
 
 function handleSubmitBK(event) {
     event.preventDefault();
-    const newBookMark = bookMarkInput.value;
+    let newBookMark = bookMarkInput.value;
     bookMarkInput.value = "";
+    if(newBookMark.substring(0,8) != "https://"){
+        newBookMark = "https://" + newBookMark;
+    }
     const newBookMarkUrlObj = {
         text: newBookMark,
         id: Date.now(),
