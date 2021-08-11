@@ -1,11 +1,11 @@
 # Momentum
 Javascriptを使用してChrome Extention Momentumクローンコーディング
-
-
+<br>
+<br>
 # Motivation
 私が必要な機能があるホーム画面と新しいタブ画面が必要なので作りました。
-
-
+<br>
+<br>
 # Tech/framework used
 - Languages : JavaScript
 - Web Developement : HTML、CSS
@@ -13,7 +13,7 @@ Javascriptを使用してChrome Extention Momentumクローンコーディング
 - Frameworks & Tools : Visual Studio Code
 - Operating Systems : Windows 10
 - Development period : 2021.3.20~2021.7.31
-
+<br>
 
 # Explanation
 background.js + quotes.js
@@ -40,7 +40,7 @@ bookmark.js
  - ユーザーからsubmitされたvalueをlocalstorageにstring化したオブジェクト(idとbookmark)で保存
  - local storageに保存された情報の有無でaタグを表現 
  - aタグの追加及び削除機能
-
+<br>
 
 # Screenshots
 ![Momentum](https://user-images.githubusercontent.com/54131117/128968882-28c1bb18-9e49-42dd-9371-113510191792.jpg)
