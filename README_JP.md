@@ -43,5 +43,4 @@ bookmark.js
 
 
 # Screenshots
-![Momentum](https://user-images.githubusercontent.com/54131117/128968882-28c1bb18-9e49-42dd-9371-113510191792.# Momentum
-Javascriptを使用してChrome Extention Momentumクローンコーディング
+![Momentum](https://user-images.githubusercontent.com/54131117/128968882-28c1bb18-9e49-42dd-9371-113510191792.jpg)
