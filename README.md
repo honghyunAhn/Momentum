@@ -7,10 +7,11 @@ Javascript를 사용하여 Chrome Extention Momentum 클론코딩
 
 
 # Tech/framework used
-- Languages          : JavaScript
+- Languages : JavaScript
+- Web Developement : HTML、CSS
+- API : openweathermap
 - Frameworks & Tools : Visual Studio Code
-- Web Developement   : HTML、CSS
-- Operating Systems  : Windows 10
+- Operating Systems : Windows 10
 - Development period : 2021.3.20~2021.7.31
 
 
