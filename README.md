@@ -5,8 +5,8 @@ Javascript를 사용하여 Chrome Extention Momentum 클론코딩
 --------------------------------------------------------
 
 - OS : Window 10		
-- Language	JavaScript
-- tool : 	
+- Language	: JavaScript
+- tools : Visual Studio Code
 
 --------------------------------------------------------
 
@@ -33,6 +33,6 @@ weather.js
 bookmark.js
  - 유저로부터 submit된 value를 localstorage에 string화한 객체(id와 todo)배열로 저장
  - localstorage에 저장된 정보의 유무로 a태그 표현 
- - - a태그의 추가 및 삭제 기능
+ - a태그의 추가 및 삭제 기능
 <br>
 <br>
