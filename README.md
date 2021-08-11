@@ -11,7 +11,7 @@ Javascript를 사용하여 Chrome Extention Momentum 클론코딩
 - Frameworks & Tools : Visual Studio Code
 - Web Developement   : HTML、CSS
 - Operating Systems  : Windows 10
-- Development period : 2020.2.26~2020.3.8
+- Development period : 2021.3.20~2021.7.31
 
 
 # Explanation
