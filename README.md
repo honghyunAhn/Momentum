@@ -2,10 +2,12 @@
 Javascript를 사용하여 Chrome Extention Momentum 클론코딩
 <br>
 <br>
+
 # Motivation
 제가 필요한 기능들이 있는 홈화면과 새탭화면이 필요해서 만들게 되었습니다.
 <br>
 <br>
+
 # Tech/framework used
 - Languages : JavaScript
 - Web Developement : HTML、CSS
@@ -15,6 +17,7 @@ Javascript를 사용하여 Chrome Extention Momentum 클론코딩
 - Development period : 2021.3.20~2021.7.31
 <br>
 <br>
+
 # Explanation
 background.js + quotes.js
  - 행렬을 형성하여 랜덤 백그라운드, 송출 문구 지정
@@ -42,5 +45,6 @@ bookmark.js
  - a태그의 추가 및 삭제 기능
 <br>
 <br>
+
 # Screenshots
 ![Momentum](https://user-images.githubusercontent.com/54131117/128968882-28c1bb18-9e49-42dd-9371-113510191792.jpg)
