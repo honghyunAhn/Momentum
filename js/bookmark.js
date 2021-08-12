@@ -60,7 +60,12 @@ function paintBookMark(newBK) {
     a.id = newBK.id;
     a.href = newBK.text;
     a.target = "_blank";
-    const innerUrl = newBK.text.substring(8, 35);
+    let innerUrl = newBK.text;
+    if (innerUrl.substring(0, 8) != "https://") {
+        innerUrl = "https://" + innerUrl;
+    } else if (newBookMark.substring(0, 7) != "http://"){
+        innerUrl = "http://" + innerUrl;
+    }
     a.innerText = innerUrl;
     const bk_remove_button = document.createElement("button");
     const buttons = document.createElement("div");
