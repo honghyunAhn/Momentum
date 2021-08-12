@@ -87,6 +87,8 @@ function handleSubmitBK(event) {
     bookMarkInput.value = "";
     if (newBookMark.substring(0, 8) != "https://") {
         newBookMark = "https://" + newBookMark;
+    } else if (newBookMark.substring(0, 7) != "http://"){
+        newBookMark = "http://" + newBookMark;
     }
     const newBookMarkUrlObj = {
         text: newBookMark,
