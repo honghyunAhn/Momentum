@@ -61,10 +61,8 @@ function paintBookMark(newBK) {
     a.href = newBK.text;
     a.target = "_blank";
     let innerUrl = newBK.text;
-    if (innerUrl.substring(0, 8) != "https://") {
-        innerUrl = "https://" + innerUrl;
-    } else if (newBookMark.substring(0, 7) != "http://"){
-        innerUrl = "http://" + innerUrl;
+    if (innerUrl.substring(0, 8) == "https://") {
+    } else if (newBookMark.substring(0, 7) == "http://"){
     }
     a.innerText = innerUrl;
     const bk_remove_button = document.createElement("button");
@@ -90,10 +88,10 @@ function handleSubmitBK(event) {
     event.preventDefault();
     let newBookMark = bookMarkInput.value;
     bookMarkInput.value = "";
-    if (newBookMark.substring(0, 8) != "https://") {
+    if (newBookMark.substring(0, 8) == "https://") {
+    } else if (newBookMark.substring(0, 7) == "http://"){
+    } else {
         newBookMark = "https://" + newBookMark;
-    } else if (newBookMark.substring(0, 7) != "http://"){
-        newBookMark = "http://" + newBookMark;
     }
     const newBookMarkUrlObj = {
         text: newBookMark,
