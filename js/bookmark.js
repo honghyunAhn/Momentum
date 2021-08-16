@@ -62,8 +62,10 @@ function paintBookMark(newBK) {
     a.target = "_blank";
     let innerUrl = newBK.text;
     if (innerUrl.substring(0, 8) == "https://") {
+        alert(innerUrl);
         innerUrl = newBK.text.substring(8, 35);
-    } else if (newBookMark.substring(0, 7) == "http://"){
+    } else if (innerUrl.substring(0, 7) == "http://"){
+        alert(innerUrl);
         innerUrl = newBK.text.substring(7, 35);
     }
     a.innerText = innerUrl;
@@ -95,6 +97,7 @@ function handleSubmitBK(event) {
     } else {
         newBookMark = "https://" + newBookMark;
     }
+    alert(newBookMark);
     const newBookMarkUrlObj = {
         text: newBookMark,
         id: Date.now(),
