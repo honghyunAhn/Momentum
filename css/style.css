@@ -286,7 +286,7 @@ li span {
 
   #greeting {
     margin-top: 350px;
-    font-size: 30px;
+    font-size: 22px;
   }
 
   #logout_bt {
@@ -303,8 +303,8 @@ li span {
   }
 
   #todo-form {
-    margin-top: ;
-    width: 90%;
+    margin-top: -30px;
+    width: 75%;
   }
   #todo-list li button:first-child {
     font-size: 18px;
@@ -314,6 +314,7 @@ li span {
   }
 
   #todo-form input {
+    height: 25px;
     font-size: 13px;
     width: 100%;
   }
