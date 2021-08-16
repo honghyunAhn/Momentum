@@ -253,6 +253,12 @@ li span {
   #todo-list h2 {
     margin-bottom: 10px;
   }
+  #bookmark-list {
+    display: none;
+  }
+  #bookmark-form input {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -275,10 +281,11 @@ li span {
   #clock {
     margin-top: -50px;
     font-size: 50px;
+    display: none;
   }
 
-  #greeting,
-  #login-form {
+  #greeting {
+    margin-top: 350px;
     font-size: 30px;
   }
 
@@ -288,9 +295,31 @@ li span {
     padding: 0px;
   }
 
-  #todo-form input,
-  .fa-times-circle:before,
   .todo-list_style {
+    width: 70%;
+    font-size: 15px;
+    right: auto;
+    top: 75px;
+  }
+
+  #todo-form {
+    margin-top: ;
+    width: 90%;
+  }
+  #todo-list li button:first-child {
+    font-size: 18px;
+  }
+  #todo-list li button:last-child {
+    font-size: 18px;
+  }
+
+  #todo-form input {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  #quote,
+  .fa-times-circle:before {
     display: none;
   }
 
@@ -299,8 +328,10 @@ li span {
     font-weight: 200;
   }
 
-  #quote {
-    width: 80%;
-    margin-left: -9%;
+  #bookmark-list {
+    display: none;
+  }
+  #bookmark-form input {
+    display: none;
   }
 }
