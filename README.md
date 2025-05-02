@@ -1,7 +1,8 @@
 # Momentum
 Javascriptを使用してChrome Extention Momentumクローンコーディング
 
-#### url : https://honghyunahn.github.io/Momentum/momentum.html
+#### url : [Momentum](https://honghyunahn.github.io/Momentum/momentum.html)
+#### Notion : [Momentum Notion 筆記](https://anh288.notion.site/THEORY-d220f1dd145649e5b16b6c87e460e928)
 
 # Motivation
 私が必要な機能があるホーム画面と新しいタブ画面が必要なので作りました。
