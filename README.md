@@ -5,6 +5,7 @@ Javascriptを使用してChrome Extention Momentumクローンコーディング
 
 # Motivation
 私が必要な機能があるホーム画面と新しいタブ画面が必要なので作りました。
+<br>
 
 # Tech/framework used
 - Languages : JavaScript
