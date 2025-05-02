@@ -3,12 +3,9 @@ Javascriptを使用してChrome Extention Momentumクローンコーディング
 
 #### url : https://honghyunahn.github.io/Momentum/momentum.html
 
-<br>
-<br>
 # Motivation
 私が必要な機能があるホーム画面と新しいタブ画面が必要なので作りました。
-<br>
-<br>
+
 # Tech/framework used
 - Languages : JavaScript
 - Web Developement : HTML、CSS
